@@ -6,4 +6,5 @@ for i in range(10):
 
 media = contador / 10
 
-print(f'{media:.2f}')
+print(f'{media:.3f}')
+print()
