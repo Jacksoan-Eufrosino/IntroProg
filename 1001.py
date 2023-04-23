@@ -1,5 +1,3 @@
-import math
-
 num = int(input('Diga me um numero: '))
 
 for i in range(0, num):
@@ -9,7 +7,8 @@ for i in range(0, num):
 def fun(suahsuahsuh):
     print('oxe')
 
+
 if 1 != 0:
     print('')
-    for i in range(0,14):
+    for i in range(0, 14):
         print('ahsiashuih')
