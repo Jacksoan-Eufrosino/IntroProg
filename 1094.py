@@ -1,17 +1,16 @@
-casos = int(input("Digite o numero de casos: "))
+casos = int(input())
 
-coelinhos = 0
+coelhos = 0
 ratos = 0
 sapos = 0
 
 
 for caso in range(casos):
-    entrada = input(
-        'Digite o numero de cobaias usadas no teste com sua inicial: ')
+    entrada = input()
     valor, letra = entrada.split()
     valor = int(valor)
     if letra == 'C':
-        coelinhos += valor
+        coelhos += valor
     elif letra == 'R':
         ratos += valor
     elif letra == 'S':
@@ -20,15 +19,15 @@ for caso in range(casos):
         print('Entrada invalida')
 
 
-total = coelinhos + ratos + sapos
-perc_coelinhos = coelinhos / total * 100
+total = coelhos + ratos + sapos
+perc_coelhos = coelhos / total * 100
 perc_ratos = ratos / total * 100
 perc_sapos = sapos / total * 100
 
-print(f'Total: {total} cobaias')
-print(f'Total de coelinhos: {coelinhos}')
-print(f'Total de ratos: {ratos}')
-print(f'Total de sapos: {sapos}')
-print(f'Percentual de coelinhos: {perc_coelinhos:.2f} %')
-print(f'Percentual de ratos: {perc_ratos:.2f} %')
-print(f'Percentual de sapos: {perc_sapos:.2f} %')
+print('Total: {} cobaias'.format(total))
+print('Total de coelhos: {}'.format(coelhos))
+print('Total de ratos: {}'.format(ratos))
+print('Total de sapos: {}'.format(sapos))
+print('Percentual de coelhos: {:.2f} %'.format(perc_coelhos))
+print('Percentual de ratos: {:.2f} %'.format(perc_ratos))
+print('Percentual de sapos: {:.2f} %'.format(perc_sapos))
