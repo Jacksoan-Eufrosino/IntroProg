@@ -27,7 +27,7 @@ entrada = entrada % 5
 n2 = entrada // 2
 entrada = entrada % 2
 
-n1 = entrada // 1
+n1 = entrada//1
 entrada = entrada % 1
 
 

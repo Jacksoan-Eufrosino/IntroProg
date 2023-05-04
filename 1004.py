@@ -1,8 +1,6 @@
 A = int(input())
 B = int(input())
 
+PROD = A*B
 
-soma = A + B
-
-
-print("X =", soma)
+print('PROD =',PROD)
