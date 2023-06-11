@@ -1,68 +1,52 @@
 n = float(input())
 
-nota_100 = 0
-nota_50 = 0
-nota_20 = 0
-nota_10 = 0
-nota_5 = 0
-nota_2 = 0
+n100 = n / 100
+resto = round(n % 100, 2)
 
-moeda_1 = 0
-moeda_050 = 0
-moeda_025 = 0
-moeda_010 = 0
-moeda_005 = 0
-moeda_001 = 0
+n50 = resto / 50
+resto = round(resto % 50, 2)
 
-nota_100 = int(n // 100)
-n = n % 100
+n20 = resto / 20
+resto = round(resto % 20, 2)
 
-nota_50 = int(n // 50)
-n = n % 50
+n10 = resto / 10
+resto = round(resto % 10, 2)
 
-nota_20 = int(n // 20)
-n = n % 20
+n5 = resto / 5
+resto = round(resto % 5, 2)
 
-nota_10 = int(n // 10)
-n = n % 10
+n2 = resto / 2
+resto = round(resto % 2, 2)
 
-nota_5 = int(n // 5)
-n = n % 5
+m1 = resto / 1
+resto = round(resto % 1, 2)
 
-nota_2 = int(n // 2)
-n = n % 2
+m50 = resto / 0.50
+resto = round(resto % 0.50, 2)
 
-moeda_1 = int(n // 1)
-n = n % 1
+m25 = resto / 0.25
+resto = round(resto % 0.25, 2)
 
-moeda_050 = int(n // 0.50)
-n = n % 0.50
+m10 = resto / 0.10
+resto = round(resto % 0.10, 2)
 
-moeda_025 = int(n // 0.25)
-n = n % 0.25
+m05 = resto / 0.05
+resto = round(resto % 0.05, 2)
 
-moeda_010 = int(n // 0.10)
-n = n % 0.10
+m01 = resto / 0.01
+resto = round(resto % 0.01, 2)
 
-moeda_005 = int(n // 0.05)
-n = n % 0.05
-
-moeda_001 = int(n // 0.01)
-n = n % 0.01
-
-print('NOTAS:')
-print('{} nota(s) de R$ 100.00'.format(nota_100))
-print('{} nota(s) de R$ 50.00'.format(nota_50))
-print('{} nota(s) de R$ 20.00'.format(nota_20))
-print('{} nota(s) de R$ 10.00'.format(nota_10))
-print('{} nota(s) de R$ 5.00'.format(nota_5))
-print('{} nota(s) de R$ 2.00'.format(nota_2))
-
-
-print('MOEDAS:')
-print('{} moeda(s) de R$ 1.00'.format(moeda_1))
-print('{} moeda(s) de R$ 0.50'.format(moeda_050))
-print('{} moeda(s) de R$ 0.25'.format(moeda_025))
-print('{} moeda(s) de R$ 0.10'.format(moeda_010))
-print('{} moeda(s) de R$ 0.05'.format(moeda_005))
-print('{} moeda(s) de R$ 0.01'.format(moeda_001))
+print("NOTAS:")
+print(int(n100), "nota(s) de R$ 100.00")
+print(int(n50), "nota(s) de R$ 50.00")
+print(int(n20), "nota(s) de R$ 20.00")
+print(int(n10), "nota(s) de R$ 10.00")
+print(int(n5), "nota(s) de R$ 5.00")
+print(int(n2), "nota(s) de R$ 2.00")
+print("MOEDAS:")
+print(int(m1), "moeda(s) de R$ 0.01")
+print(int(m50), "moeda(s) de R$ 1.00")
+print(int(m25), "moeda(s) de R$ 0.50")
+print(int(m10), "moeda(s) de R$ 0.25")
+print(int(m05), "moeda(s) de R$ 0.10")
+print(int(m01), "moeda(s) de R$ 0.05")
